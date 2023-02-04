@@ -19,7 +19,11 @@ Step 2: Edit the hosts file to specify the list of servers you want to run the p
 
 Step 3: Run the playbook with the following command:
 
+```ymal 
+
 ansible-playbook update_packages.yml
+
+```
 
 
 Step 4: The playbook will update all packages on all servers specified in the hosts file.
