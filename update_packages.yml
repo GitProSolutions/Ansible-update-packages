@@ -1,0 +1,10 @@
+# Here's a simple Ansible playbook to automate the task of updating all packages on multiple servers:
+
+- name: Update all packages on servers
+  hosts: all
+  become: yes
+  tasks:
+    - name: Updating all packages
+      apt:
+        upgrade: yes
+        update_cache: yes
